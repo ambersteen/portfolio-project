@@ -3,6 +3,7 @@
     --secondary-color: #4D2F41;
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     
 
 }
@@ -58,6 +59,7 @@ color: white;
 font-size: 18px;
 line-height: 27px;
 padding: 12px;
+box-shadow: var(--box-shadow);
 }
 
 .btn-branding:hover {
@@ -65,6 +67,7 @@ cursor: pointer;
 background-color: white;
 border: 1px solid var(--branding-color);
 color: var(--branding-color);
+box-shadow: var(--box-shadow);
 }
 
 .btn-branding-outline {
@@ -74,11 +77,13 @@ border-radius: 4px;
 font-size: 18px;
 line-height: 27px;
 padding: 12px;
+box-shadow: var(--box-shadow);
 }
 .btn-branding-outline:hover {
 cursor: pointer;
-color: var(--branding-color);
-background-color: var(--secondary-color);
+color: white;
+background-color: var(--branding-color);
+box-shadow: var(--box-shadow);
 }
 
 .img-fluid {
