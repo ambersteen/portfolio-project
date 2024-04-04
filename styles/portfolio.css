@@ -98,6 +98,7 @@ background-color: white;
 border: 1px solid var(--branding-color);
 color: var(--branding-color);
 box-shadow: var(--box-shadow);
+transition: all 100ms ease-in-out;
 }
 
 .btn-branding-outline {
@@ -114,6 +115,7 @@ cursor: pointer;
 color: white;
 background-color: var(--branding-color);
 box-shadow: var(--box-shadow);
+transition: all 100ms ease-in-out;
 }
 #headshot {
 color: var(--branding-color);
@@ -133,6 +135,42 @@ padding: 60px 60px;
 img {
 border-radius: 4px;
 }
+#logofont a {
+font-family: "WindSong", cursive;
+font-size: 36px;
+color: var(--branding-color);
+border-radius: 50%;
+border: 1px solid var(--branding-color);
+
+}
+
+nav {
+padding: 20px;
+}
+
+nav ul {
+padding: 0;
+margin: 0;
+}
+
+nav li {
+display: inline;
+list-style: none;
+line-height: 42px;
+margin-left: 15px;
+}
+
+nav a {
+text-decoration: none;
+color: var(--secondary-color);
+}
+
+nav a:hover,
+nav li.active a {
+color: var(--branding-color);
+transition: all 100ms ease-in-out;
+text-decoration: none;
+}
 
 @media(max-width: 900px) {
 h1 {
@@ -142,9 +180,19 @@ line-height: 1.5;
 h2 {
 font-size: 44px;
 }
+nav a {
+font-size: 12px;
+text-align: center;
+}
+
 .hero {
 padding:80px 20px;
 }
+#logofont a {
+font-size: 24px;
+text-align: end;
+}
+
 
 .content {
 text-align: center;
@@ -155,4 +203,5 @@ padding: 0;
     padding: 0;
     text-align: center;
 }
+
 }
