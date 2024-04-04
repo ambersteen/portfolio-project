@@ -80,7 +80,6 @@ color: var(--secondary-color);
 font-size: 14px;
 
 }
-
 .content {
 margin: 30px;
 }
@@ -141,16 +140,21 @@ img {
 border-radius: 4px;
 }
 #logofont a {
-font-family: "WindSong", cursive;
+font-family: "Zeyada", cursive;
 font-size: 36px;
 color: var(--branding-color);
 border-radius: 50%;
 border: 1px solid var(--branding-color);
 
 }
+#navbar-scroll {
+padding: 0;
+opacity: 0.9;
+}
 
 nav {
 padding: 20px;
+background-color: #4D2F41;
 }
 
 nav ul {
@@ -167,7 +171,7 @@ margin-left: 15px;
 
 nav a {
 text-decoration: none;
-color: var(--secondary-color);
+color: white;
 }
 
 nav a:hover,
@@ -218,6 +222,10 @@ color: white;
 background-color: var(--branding-color);
 }
 
+.contact-link a {
+color: var(--branding-color);
+}
+
 @media(max-width: 900px) {
 h1 {
 font-size: 44px;
@@ -246,7 +254,6 @@ text-align: end;
 text-align: center;
 padding: 0;
 }
-
 .project-description {
     padding: 0;
     text-align: center;
