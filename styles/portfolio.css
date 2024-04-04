@@ -25,7 +25,10 @@ h1 {
 h2 {
     font-size: 64px;
     color: var(--secondary-color);
-
+}
+h4 {
+font-size: 48px;
+color: var(--branding-color);
 }
 p {
 font: normal;
@@ -90,6 +93,7 @@ font-size: 18px;
 line-height: 27px;
 padding: 12px;
 box-shadow: var(--box-shadow);
+ transition: all 150ms ease-in-out;
 }
 
 .btn-branding:hover {
@@ -98,7 +102,7 @@ background-color: white;
 border: 1px solid var(--branding-color);
 color: var(--branding-color);
 box-shadow: var(--box-shadow);
-transition: all 100ms ease-in-out;
+
 }
 
 .btn-branding-outline {
@@ -109,13 +113,14 @@ font-size: 18px;
 line-height: 27px;
 padding: 12px;
 box-shadow: var(--box-shadow);
+ transition: all 150ms ease-in-out;
 }
 .btn-branding-outline:hover {
 cursor: pointer;
 color: white;
 background-color: var(--branding-color);
 box-shadow: var(--box-shadow);
-transition: all 100ms ease-in-out;
+
 }
 #headshot {
 color: var(--branding-color);
@@ -171,6 +176,47 @@ color: var(--branding-color);
 transition: all 100ms ease-in-out;
 text-decoration: none;
 }
+footer {
+    margin: 60px 0;
+}
+
+footer .contact-box {
+background-color: var(--secondary-color);
+padding: 30px 120px;
+border-radius: 10px;
+}
+
+footer .contact-box p {
+color: white;
+margin: 0;
+}
+
+footer .email-link {
+text-decoration: none;
+text-align: center;
+color: var(--secondary-color);
+font-size: 24px;
+}
+
+footer .email-link:hover {
+color: var(--branding-color);
+text-decoration: none;
+}
+
+footer .social-links a {
+ margin: 0 20px;
+ color: var(--branding-color);
+ background: var(--secondary-color);
+ padding: 10px 14px;
+ border-radius: 50%;
+ font-size: 18px;
+ transition: all 150ms ease-in-out;
+
+}
+footer .social-links a:hover {
+color: white;
+background-color: var(--branding-color);
+}
 
 @media(max-width: 900px) {
 h1 {
@@ -180,11 +226,13 @@ line-height: 1.5;
 h2 {
 font-size: 44px;
 }
+h4 {
+    font-size: 26px;
+}
 nav a {
 font-size: 12px;
 text-align: center;
 }
-
 .hero {
 padding:80px 20px;
 }
@@ -202,6 +250,9 @@ padding: 0;
 .project-description {
     padding: 0;
     text-align: center;
+}
+footer .contact-box {
+padding: 30px;
 }
 
 }
