@@ -1,6 +1,7 @@
 :root {
     --branding-color: #F36AB1;
     --secondary-color: #4D2F41;
+    --font-color: white;
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -12,7 +13,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: white;
+    color: var(--font-color);
     font-family: var(--heading-font-family);
     font-weight: bold;
     text-align: center;
@@ -26,7 +27,7 @@ h2 {
     font-size: 64px;
     color: var(--secondary-color);
 }
-h4 {
+h3 {
 font-size: 48px;
 color: var(--branding-color);
 }
@@ -35,28 +36,31 @@ font: normal;
 font-size: 16px;
 line-height: 30px;
 }
+#scroll-prompt {
+color: var(--branding-color);
+}
 .hero {
     background-color: var(--secondary-color);
     text-align: center;
-    padding: 160px 20px;
+    padding: 110px 20px;
 }
 
 .hero p {
 font-size: 36px;
 font-weight: bold;
 margin: 0;
-color: #F7F4F2;
+color: var(--font-color);
 }
 
 .hero h2{
 font-weight: normal;
 line-height: 1.5;
 font-size: 24px;
-color: #F7F4F2;
+color: var(--font-color);
 }
 
 .content-container {
-padding: 160px 20px;
+padding: 120px 20px;
 }
 
 .content h1 {
@@ -87,7 +91,7 @@ margin: 30px;
 .btn-branding {
 background: var(--branding-color);
 border-radius: 4px;
-color: white;
+color: var(--font-color);
 font-size: 18px;
 line-height: 27px;
 padding: 12px;
@@ -97,7 +101,7 @@ box-shadow: var(--box-shadow);
 
 .btn-branding:hover {
 cursor: pointer;
-background-color: white;
+background-color: var(--font-color);
 border: 1px solid var(--branding-color);
 color: var(--branding-color);
 box-shadow: var(--box-shadow);
@@ -107,6 +111,7 @@ box-shadow: var(--box-shadow);
 .btn-branding-outline {
 color: var(--branding-color);
 border: 1px solid var(--branding-color);
+background-color: var(--font-color);
 border-radius: 4px;
 font-size: 18px;
 line-height: 27px;
@@ -116,7 +121,7 @@ box-shadow: var(--box-shadow);
 }
 .btn-branding-outline:hover {
 cursor: pointer;
-color: white;
+color: var(--font-color);
 background-color: var(--branding-color);
 box-shadow: var(--box-shadow);
 
@@ -154,7 +159,7 @@ opacity: 0.9;
 
 nav {
 padding: 20px;
-background-color: #4D2F41;
+background-color: var(--secondary-color);
 }
 
 nav ul {
@@ -171,7 +176,7 @@ margin-left: 15px;
 
 nav a {
 text-decoration: none;
-color: white;
+color: var(--font-color);
 }
 
 nav a:hover,
@@ -191,7 +196,7 @@ border-radius: 10px;
 }
 
 footer .contact-box p {
-color: white;
+color: var(--font-color);
 margin: 0;
 }
 
@@ -218,7 +223,7 @@ footer .social-links a {
 
 }
 footer .social-links a:hover {
-color: white;
+color: var(--font-color);
 background-color: var(--branding-color);
 }
 
@@ -231,10 +236,13 @@ h1 {
 font-size: 44px;
 line-height: 1.5;
 }
+.content h1 {
+font-size: 36px;
+}
 h2 {
 font-size: 44px;
 }
-h4 {
+h3 {
     font-size: 26px;
 }
 nav a {
@@ -242,14 +250,12 @@ font-size: 12px;
 text-align: center;
 }
 .hero {
-padding:80px 20px;
+padding:90px 20px;
 }
 #logofont a {
 font-size: 24px;
 text-align: end;
 }
-
-
 .content {
 text-align: center;
 padding: 0;
@@ -261,5 +267,4 @@ padding: 0;
 footer .contact-box {
 padding: 30px;
 }
-
 }
