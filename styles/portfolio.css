@@ -230,6 +230,25 @@ background-color: var(--branding-color);
 .contact-link a {
 color: var(--branding-color);
 }
+a {
+color: var(--branding-color);
+transition: all 200ms ease-in-out;
+}
+.web-signature {
+    font-size: 12px;
+    margin-top: 60px;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.web-signature a:hover {
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 60px;
+    text-decoration: none;
+    color: var(--secondary-color);
+
+}
 
 @media(max-width: 900px) {
 h1 {
